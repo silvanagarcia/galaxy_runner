@@ -1,0 +1,29 @@
+ARCHIVOS DE MÚSICA REQUERIDOS PARA GALAXY RUNNER
+==============================================
+
+Coloca estos 5 archivos MP3 en esta carpeta:
+
+MÚSICA DE MENÚ:
+- menu_music.mp3          (se reproduce en pantallas de menú)
+
+MÚSICA DE GAMEPLAY:
+- enemies_music.mp3       (durante combate con esbirros de TODOS los niveles)
+
+MÚSICA DE JEFES:
+- boss1_music.mp3         (solo durante combate con Jefe 1)
+- boss2_music.mp3         (solo durante combate con Jefe 2)
+- boss3_music.mp3         (solo durante combate con Jefe 3)
+
+TOTAL: 5 archivos de música .mp3
+
+COMPORTAMIENTO:
+✅ menu_music.mp3 → Se reproduce al iniciar, PAUSA cuando empieza el juego
+✅ enemies_music.mp3 → Se reproduce durante esbirros (niveles 1, 2, 3)
+✅ boss1_music.mp3 → Se reproduce SOLO durante Jefe 1
+✅ boss2_music.mp3 → Se reproduce SOLO durante Jefe 2  
+✅ boss3_music.mp3 → Se reproduce SOLO durante Jefe 3
+✅ NO se superponen - solo una música a la vez
+✅ Transiciones automáticas con fade in/out
+
+El sistema está completamente configurado y funcionará automáticamente
+una vez que agregues estos archivos MP3.
