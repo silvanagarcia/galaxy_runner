@@ -1,21 +1,25 @@
 # -*- mode: python ; coding: utf-8 -*-
+#
+# TODO (post-reorganización): este spec fue migrado de `Code/` a `src/`.
+# Pendiente de revisión completa:
+#   - ejecutar siempre desde la raíz del repo:  pyinstaller build/GalaxyRunner.spec
+#   - `src/assets/backgrounds` y `src/assets/fonts` no existen todavía (assets opcionales)
+#   - la base de datos ya no se versiona; se genera al primer arranque
+#
 import os
 
 block_cipher = None
 
-# Configurar el path base
-code_path = os.path.join(os.getcwd(), 'Code')
+# Configurar el path base (raíz del repo / carpeta src)
+code_path = os.path.join(os.getcwd(), 'src')
 
 a = Analysis(
-    ['Code\\main.py'],
-    pathex=[code_path],  # Agregar Code al path para que encuentre los módulos
+    [os.path.join('src', 'main.py')],
+    pathex=[code_path],  # Agregar src al path para que encuentre los módulos
     binaries=[],
     datas=[
-        ('Code\\assets\\images', 'assets\\images'),
-        ('Code\\assets\\sounds', 'assets\\sounds'),
-        ('Code\\assets\\backgrounds', 'assets\\backgrounds'),
-        ('Code\\assets\\fonts', 'assets\\fonts'),
-        ('Code\\db\\galaxy.db', 'db'),  # Incluir la base de datos
+        (os.path.join('src', 'assets', 'images'), os.path.join('assets', 'images')),
+        (os.path.join('src', 'assets', 'sounds'), os.path.join('assets', 'sounds')),
     ],
     hiddenimports=[
         'db',

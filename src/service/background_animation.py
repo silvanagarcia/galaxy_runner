@@ -28,7 +28,7 @@ class BackgroundAnimation:
     
     def load_frames(self):
 
-        from Code.constants.config import BACKGROUNDS_DIR
+        from constants.config import BACKGROUNDS_DIR
         
         self.frames.clear()
         frames_loaded = 0

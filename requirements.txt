@@ -1,1 +1,7 @@
+# Dependencias de ejecución de Galaxy Runner
+# Instalar con:  pip install -r requirements.txt
+
 pygame==2.5.2
+
+# --- Solo para generar el ejecutable (opcional) ---
+# pyinstaller>=6.0
