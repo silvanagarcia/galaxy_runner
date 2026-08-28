@@ -178,6 +178,7 @@ galaxy_runner/
 │           └── sfx/            # Efectos de sonido
 ├── docs/                       # Documentación
 │   ├── ARQUITECTURA.md         # Diseño técnico y flujo de estados
+│   ├── ANALISIS-Y-MEJORAS.md   # Estado del repo y mejoras propuestas
 │   ├── documento-diseno.md     # Documento de diseño del juego
 │   ├── CREDITOS.md             # Autoría y recursos
 │   └── screenshots/            # Capturas para el README
@@ -250,7 +251,7 @@ Ver **[docs/ARQUITECTURA.md](docs/ARQUITECTURA.md)** para:
 **Funciona hoy:** menú, 3 niveles con jefes, power-ups, ranking SQLite, audio,
 créditos, ventana redimensionable.
 
-**Pendiente / ideas:**
+**Pendiente / ideas** (análisis completo en [docs/ANALISIS-Y-MEJORAS.md](docs/ANALISIS-Y-MEJORAS.md)):
 
 - [ ] Actualizar los scripts de `build/` a la estructura `src/`.
 - [ ] Implementar la pantalla de **Opciones** (hoy es un *placeholder*).
