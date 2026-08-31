@@ -7,13 +7,13 @@ import sys
 # RUTAS Y DIRECTORIOS
 # ============================================================================
 
-# Directorio base - apunta a la carpeta Code
+# Directorio base - apunta a la carpeta src
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Cuando se ejecuta el ejecutable de PyInstaller, los archivos se extraen en
 # sys._MEIPASS. Ajustamos BASE_DIR para apuntar a la copia empaquetada.
 if hasattr(sys, '_MEIPASS'):
-    BASE_DIR = os.path.join(sys._MEIPASS, 'Code')
+    BASE_DIR = os.path.join(sys._MEIPASS, 'src')
 
 # Directorios de recursos
 ASSETS_DIR = os.path.join(BASE_DIR, 'assets')
